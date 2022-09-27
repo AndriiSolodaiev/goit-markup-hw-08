@@ -1,0 +1,42 @@
+.social-list {
+	@include align;
+	gap: 10px;
+}
+
+.social-list__link {
+	@include align;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	transition: background-color var(--trans-dur-t-func);
+
+	&:hover,
+	&:focus {
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background-color: var(--accent-color);
+	}
+}
+
+.social-list__icon {
+	width: 20px;
+	height: 20px;
+	fill: var(--icon-color);
+	transition: fill var(--trans-dur-t-func);
+
+	.social-list__link:hover &,
+	.social-list__link:focus & {
+		fill: var(--title-text-color-dark-bcgr);
+	}
+}
+// ========= THEME DARK =========
+.social-list__link_theme_dark {
+	background-color: rgba(255, 255, 255, 0.1);
+	transition: background-color var(--trans-dur-t-func);
+}
+
+.social-list__icon_theme_dark {
+	fill: var(--title-text-color-dark-bcgr);
+	transition: fill var(--trans-dur-t-func);
+}

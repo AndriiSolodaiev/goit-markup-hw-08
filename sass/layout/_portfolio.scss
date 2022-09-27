@@ -1,0 +1,28 @@
+.list-portfolio-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .list-portfolio-filter {
+        justify-content: center;
+    }
+    .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
+        .projects-item {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+}
+

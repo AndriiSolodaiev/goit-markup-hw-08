@@ -1,0 +1,19 @@
+.subscribe-btn-wrapper>.subscribe-btn {
+    padding-left: 28px;
+    width: 200px;
+    height: 50px;
+}
+
+.subscribe-btn-wrapper {
+    position: relative;
+}
+
+.subscribe-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 28px;
+    fill: var(--title-text-color-dark-bcgr);
+}

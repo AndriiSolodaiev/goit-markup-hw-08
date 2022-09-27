@@ -1,0 +1,37 @@
+.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--trans-dur-t-func);
+    padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+    .modal{
+        width: 528px;
+        height: 581px;
+    }
+    
+}
+.btn-close-modal {
+    position: absolute;
+    @include align;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,14 @@
+.contact-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.location-link {
+    line-height: 1.71;
+    color: var(--title-text-color-dark-bcgr);
+}
+
+.footer-email,
+.footer-phone-number {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}

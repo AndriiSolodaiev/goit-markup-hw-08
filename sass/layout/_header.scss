@@ -1,0 +1,117 @@
+
+.page-header-container {
+	border-bottom: 1px solid var(--border-color);
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.menu-burger-btn {
+	margin-left: auto;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+	line-height: 0;
+}
+
+.menu-burger-btn__icon {
+	width: 40px;
+	height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	.menu {
+		display: none;
+	}
+	.header-contacts {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.page-header-container {
+		height: 80px;
+	}
+	.header-contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.header-contacts__email,
+	.header-contacts__phone-number {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: var(--general-text-color);
+		transition: color var(--trans-dur-t-func);
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	.header-contacts__envelope-icon {
+		width: 16px;
+		height: 12px;
+		fill: var(--general-text-color);
+		margin-right: 10px;
+		transition: fill var(--trans-dur-t-func);
+
+		&:hover,
+		&:focus {
+			fill: var(--accent-color);
+		}
+		.header-contacts__email:hover &,
+		.header-contacts__email:focus & {
+			fill: var(--accent-color);
+		}
+	}
+
+	.header-contacts__smartphone-icon {
+		width: 10px;
+		height: 16px;
+		fill: var(--general-text-color);
+		margin-right: 10px;
+		transition: fill var(--trans-dur-t-func);
+
+		&:hover,
+		&:focus {
+			fill: var(--accent-color);
+		}
+
+		.header-contacts__phone-number:hover &,
+		.header-contacts__phone-number:focus & {
+			fill: var(--accent-color);
+		}
+	}
+		.menu-burger-btn {
+			display: none;
+		}
+}
+
+@media screen and (min-width: 1200px) {
+	.menu {
+		margin-left: 93px;
+	}
+	.header-contacts {
+		flex-direction: row;
+		margin-left: auto;
+	}
+
+	.header-contacts__email {
+		margin-right: 50px;
+	}
+}
+
