@@ -779,7 +779,6 @@ body {
 .page-header-container {
   border-bottom: 1px solid var(--border-color);
   height: 60px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
