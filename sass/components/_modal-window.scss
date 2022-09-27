@@ -1,4 +1,5 @@
 .is-hidden .modal {
+    height: 100%;
     transform: translate(-50%, -50%) scale(1.2);
 }
 
@@ -15,6 +16,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--trans-dur-t-func);
     padding: 40px;
+}
+@media screen and (max-width: 450px) {
+    .modal {
+        width: 100%;
+        transform: translate(-50%, -50%) scale(0.8);
+    }     
 }
 @media screen and (min-width: 1200px) {
     .modal{

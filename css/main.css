@@ -133,13 +133,15 @@ body {
   width: 100%;
   z-index: 100;
   background-color: #fff;
+  transform: scale(0.5) translate(100%, -100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--trans-dur-t-func), visibility var(--trans-dur-t-func);
+  transition: opacity var(--trans-dur-t-func), visibility var(--trans-dur-t-func), transform var(--trans-dur-t-func);
 }
 
 .modal-menu.is-open {
+  transform: scale(1) translate(0%, 0%);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -565,6 +567,7 @@ body {
 }
 
 .is-hidden .modal {
+  height: 100%;
   transform: translate(-50%, -50%) scale(1.2);
 }
 
@@ -583,6 +586,12 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
