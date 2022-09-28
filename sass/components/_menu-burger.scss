@@ -51,22 +51,24 @@
 .menu-burger {
 	margin-bottom: auto;
 }
+.menu-burger__item {
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+}
 
 .menu-burger__link {
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 1.175;
 	letter-spacing: 0.02em;
+
 	color: var(--title-text-color);
 	transition: color var(--trans-dur-t-func);
 
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
-	}
-
-	&:not(:last-child) {
-		margin-bottom: 32px;
 	}
 }
 

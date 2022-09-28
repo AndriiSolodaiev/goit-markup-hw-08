@@ -180,6 +180,10 @@ body {
   margin-bottom: auto;
 }
 
+.menu-burger__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .menu-burger__link {
   font-weight: 500;
   font-size: 40px;
@@ -190,9 +194,6 @@ body {
 }
 .menu-burger__link:hover, .menu-burger__link:focus {
   color: var(--accent-color);
-}
-.menu-burger__link:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .menu-burger-contacts__phone-number {
@@ -880,7 +881,7 @@ body {
 }
 .hero {
   background-color: var(--background-color);
-  width: 100%;
+  max-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -896,6 +897,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-tablet/hero-bg-tablet.jpg");
   }
 }
